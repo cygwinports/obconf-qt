@@ -1,9 +1,0 @@
---- origsrc/src/CMakeLists.txt	2014-05-07 00:42:53.000000000 -0500
-+++ src/src/CMakeLists.txt	2014-06-08 23:02:18.237779400 -0500
-@@ -1,5 +1,5 @@
- # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
--set(CMAKE_CXX_FLAGS "-DQT_NO_KEYWORDS -fno-exceptions")
-+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DQT_NO_KEYWORDS -fno-exceptions")
- 
- include_directories(
-   ${QT_INCLUDES}

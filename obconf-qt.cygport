@@ -1,7 +1,7 @@
 inherit qt4-cmake
 
 NAME="obconf-qt"
-VERSION=0.1.0
+VERSION=0.11.0
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="LXQt OpenBox settings dialog"
@@ -9,6 +9,6 @@ DESCRIPTION="LXQt is the Qt port and the upcoming version of LXDE. It is the
 product of the merge between the LXDE-Qt and the Razor-qt projects: A
 lightweight, modular, blazing-fast and user-friendly desktop environment."
 HOMEPAGE="http://lxqt.org/"
-SRC_URI="http://lxqt.org/downloads/${NAME}/${VERSION}/${NAME}-${VERSION}.tar.xz"
-SRC_DIR=.
-PATCH_URI="0.1.0-cxxflags.patch"
+SRC_URI="http://downloads.lxqt.org/${NAME}/${VERSION}/${NAME}-${VERSION}.tar.xz"
+
+CYGCMAKE_ARGS="-DPULL_TRANSLATIONS=OFF"
